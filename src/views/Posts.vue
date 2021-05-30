@@ -9,12 +9,12 @@
 <script>
 import { mapGetters} from "vuex";
 export default{
-    name: 'Posts Page',
+    name: 'Posts',
     components: {
         
     },
     computed:{
-        ...mapGetters({User: "StateUser"})
+        ...mapGetters({User: "StateUsername"})
     }
 };
 

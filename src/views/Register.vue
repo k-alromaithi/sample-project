@@ -1,7 +1,7 @@
 <template>
     <div class="register">
         <div>
-            <form>
+            <form @submit.prevent="submit">
                 <div>
                 <label for="username">Username:</label>
                 <input type="text" name="username" v-model="form.username">
@@ -23,7 +23,7 @@
 <script>
 import { mapActions } from "vuex";
 export default{
-    name: 'Register Page',
+    name: 'Register',
     components: {
         
     },
